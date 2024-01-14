@@ -11,7 +11,7 @@ Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
 
 /* Add google Poppins font  */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Add google Poppins font end */
 /* Variable CSS start  */
 :root {
@@ -189,6 +189,77 @@ section {
 }
 
 /* Client section end  */
+/* Product section start  */
+.products-section {
+  margin-top: 100px;
+}
+.products-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products-section .product-grid {
+  width: calc(100% - 32px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+}
+.products-section .product-grid .product-item {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.products-section .product-grid .product-item .product-des .pro-title {
+  color: #18191f;
+  font-feature-settings: "liga" off;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.products-section .product-grid .product-item .product-des .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.products-section .product-grid .product-item .product-img img {
+  width: 100%;
+}
+.products-section .product-grid .product-item .product-des .rating {
+  font-size: 16px;
+  color: #fb8200;
+}
+.products-section
+  .product-grid
+  .product-item
+  .product-des
+  .product-description {
+  color: #787885;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+.products-section .see-more-btn {
+  color: rgba(224, 44, 109, 0.87);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: right;
+  float: right;
+  margin-top: 50px;
+}
+/* Product section end  */
 /* Home page CSS end  */
 /* CSS break point or css responsive support or media query start  */
 /* Mobile devices support css start  */
@@ -242,6 +313,12 @@ section {
     margin-top: 151px;
   }
   /* Client area css end  */
+
+  /* Products section mobile device supported CSS start  */
+  .products-section .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Products section mobile device supported CSS end */
 }
 /* Mobile devices support css end  */
 /* Tab/Medium device support css start  */
@@ -263,6 +340,11 @@ section {
   section.customer-section {
     margin-top: 0px;
   }
+  /* Products section tab device supported CSS start  */
+  .products-section .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Products section tab device supported CSS end */
 }
 /* Tab/Medium device support css end  */
 /* Medium large device supported device CSS start  */
