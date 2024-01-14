@@ -205,6 +205,7 @@ section {
   gap: 30px;
   margin: 0 auto;
 }
+
 .products-section .product-grid .product-item {
   border-radius: 5px;
   background: #fff;
@@ -232,8 +233,13 @@ section {
   width: 100%;
 }
 .products-section .product-grid .product-item .product-des .rating {
-  font-size: 16px;
+  font-size: 14px;
   color: #fb8200;
+}
+.products-section .product-grid .product-item span {
+  color: #5e6366;
+  margin-left: 10px;
+  font-weight: 700;
 }
 .products-section
   .product-grid
