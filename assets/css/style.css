@@ -1,0 +1,289 @@
+/*
+Template Name: Wahed Nur Quick start package.
+Author: Wahed Nur
+Author URI: http://wahednur.com/
+Description: Influencer gears is HTML5, CSS3, JavaScript responsive template 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
+
+*/
+
+/* Add google Poppins font  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Add google Poppins font end */
+/* Variable CSS start  */
+:root {
+  --primary-color: #18191f;
+  --gray-color: #3a3a3a;
+  --btn-color: #e02c6d;
+}
+/* Variable CSS end  */
+
+/* Reset CSS start  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset CSS end  */
+
+/* Global CSS start */
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header,
+footer,
+section {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  background: #e02c6d;
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* Global CSS end */
+
+/* Home page CSS start  */
+/* Header section css start */
+.header {
+}
+
+.desk-logo-nav-area {
+  height: 54px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.desk-logo-nav-area .desk-logo {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 700;
+}
+.desk-logo-nav-area .desk-menu .desk-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 34px;
+}
+.desk-logo-nav-area .desk-menu .desk-nav a {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.desk-logo-nav-area .desk-menu .desk-nav a i {
+  font-size: 16px;
+  font-weight: 900;
+}
+.header-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 475px;
+  margin-top: 50px;
+}
+.header-banner .banner-tittle {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 134.615% */
+}
+.header-banner .banner-text p {
+  width: 505px;
+  margin: 16px 0;
+}
+.header-banner .btn {
+  border-radius: 41px;
+}
+/* Header section css end */
+
+.mobile-nav {
+  display: none;
+}
+.logo-menu-area {
+  width: 100%;
+}
+/* Client section start  */
+.customer-section {
+  margin-top: 69px;
+}
+.customer-section .client-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 35px 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.customer-section .client-wrap img:hover {
+  filter: grayscale(1);
+  transition: all ease-in-out 300ms;
+}
+.customer-section .client-wrap::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.customer-section .client-wrap::before {
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* Client section end  */
+/* Home page CSS end  */
+/* CSS break point or css responsive support or media query start  */
+/* Mobile devices support css start  */
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    width: calc(100% - 24px);
+    margin: 0 auto;
+  }
+  .desk-logo-nav-area {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    margin-top: 30px;
+  }
+  .mobile-nav a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-color);
+  }
+  .mobile-nav a:hover {
+    color: var(--btn-color);
+  }
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-banner .banner-text {
+    order: 1;
+    margin-bottom: 14px;
+  }
+  .header-banner .banner-img img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .header-banner .banner-text .banner-tittle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .header-banner .banner-text p {
+    width: 100%;
+  }
+  /* Client area css start  */
+  section.customer-section {
+    margin-top: 151px;
+  }
+  /* Client area css end  */
+}
+/* Mobile devices support css end  */
+/* Tab/Medium device support css start  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: calc(100% - 24px);
+    margin: 0 auto;
+  }
+  .header-banner .banner-text p {
+    width: auto;
+  }
+  .banner-img img {
+    width: 300px;
+  }
+  .header-banner .banner-tittle {
+    font-size: 30px;
+    line-height: normal;
+  }
+  section.customer-section {
+    margin-top: 0px;
+  }
+}
+/* Tab/Medium device support css end  */
+/* Medium large device supported device CSS start  */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/* Medium large device supported device CSS end  */
+/* Large Device supported CSS start  */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* Large Device supported CSS end  */
+/* Extra large device supported css start  */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+/* Extra large device supported css end  */
+/* CSS break point or css responsive support or media query start  */
