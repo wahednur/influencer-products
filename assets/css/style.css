@@ -11,7 +11,7 @@ Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
 
 /* Add google Poppins font  */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Add google Poppins font end */
 /* Variable CSS start  */
 :root {
@@ -31,7 +31,7 @@ Tags: WS, Wahed Nur, Boilerplate, HTML5, CSS,
 
 /* Global CSS start */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Inter", "Manrope", sans-serif;
 }
 ul,
 li {
@@ -260,6 +260,83 @@ section {
   margin-top: 50px;
 }
 /* Product section end  */
+/* Feature section  css start  */
+.feature-section {
+  margin-top: 100px;
+}
+.feature-section .fe-wrap {
+  display: flex;
+  gap: 96px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-section .fe-wrap .text-content {
+  width: calc(100% - 500px);
+}
+.feature-section .fe-wrap .text-content h1 {
+  color: #0a0826;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+.feature-section .fe-wrap .text-content p {
+  color: #6c6c6c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  width: 501px;
+  margin: 16px 0;
+}
+/* Feature section  css end  */
+/* footer section css start  */
+.footer {
+  background: #0a0826;
+  text-align: center;
+  color: #ffffff;
+  padding: 50px 0;
+}
+.footer h1 {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer p {
+  color: #d9dbe1;
+  font-feature-settings: "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.footer .soical-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer .soical-icon svg {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff38;
+  border-radius: 32px;
+  padding: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* footer section css end  */
 /* Home page CSS end  */
 /* CSS break point or css responsive support or media query start  */
 /* Mobile devices support css start  */
@@ -318,7 +395,35 @@ section {
   .products-section .product-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .products-section {
+    margin-top: 50px;
+  }
   /* Products section mobile device supported CSS end */
+  .feature-section .fe-wrap .img-content {
+    width: 100%;
+    order: 1;
+  }
+  .feature-section .fe-wrap .img-content img {
+    width: 100%;
+    order: 1;
+  }
+  .feature-section .fe-wrap .text-content h1 {
+    color: #0a0826;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .feature-section .fe-wrap .text-content p {
+    width: 100%;
+  }
+  .feature-section .fe-wrap .text-content {
+    width: 100%;
+    text-align: center;
+  }
 }
 /* Mobile devices support css end  */
 /* Tab/Medium device support css start  */
@@ -345,6 +450,22 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
   /* Products section tab device supported CSS end */
+  .feature-section .fe-wrap {
+    flex-direction: column;
+  }
+  .feature-section .fe-wrap .img-content,
+  .feature-section .fe-wrap .text-content {
+    width: 100%;
+  }
+  .feature-section .fe-wrap .img-content {
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .feature-section .fe-wrap .img-content img {
+    width: 100%;
+  }
+  .feature-section .fe-wrap .text-content {
+  }
 }
 /* Tab/Medium device support css end  */
 /* Medium large device supported device CSS start  */
