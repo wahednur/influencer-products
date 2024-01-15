@@ -117,6 +117,7 @@ section {
   align-items: center;
   height: 475px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .header-banner .banner-tittle {
   color: #3a3a3a;
@@ -133,6 +134,9 @@ section {
 }
 .header-banner .btn {
   border-radius: 41px;
+}
+.banner-text {
+  width: calc(100% - 500px);
 }
 /* Header section css end */
 
@@ -375,10 +379,12 @@ section {
   .header-banner {
     flex-direction: column;
     text-align: center;
+    height: auto;
   }
   .header-banner .banner-text {
     order: 1;
     margin-bottom: 14px;
+    width: 100%;
   }
   .header-banner .banner-img img {
     width: 100%;
@@ -392,9 +398,10 @@ section {
   .header-banner .banner-text p {
     width: 100%;
   }
+
   /* Client area css start  */
   section.customer-section {
-    margin-top: 151px;
+    /* margin-top: 151px; */
   }
   /* Client area css end  */
 
@@ -444,6 +451,9 @@ section {
   }
   .banner-img img {
     width: 300px;
+  }
+  .header-banner .banner-text {
+    width: calc(100% - 300px);
   }
   .header-banner .banner-tittle {
     font-size: 30px;
